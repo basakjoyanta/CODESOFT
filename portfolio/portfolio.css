@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(98, 0, 255, 0.692);
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: rgba(51, 0, 255, 0.08);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    color: bisque;
+    flex-direction: column;
+
+}
+.img1{
+    height: 5vh;
+    width:4vw;
+    padding-right: 30px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li a{
+    list-style: none;
+    margin: 0px 25px;
+    color: aliceblue;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: red;
+    font-size: 1rem;
+}
+.buttons{
+    position: relative;
+    display: flex;
+    margin:40px 20px;
+}
+.btn a{
+    text-decoration: none;
+    text-overflow: inherit;
+    color: antiquewhite;
+}
+.btn :hover{
+    color: purple;
+}
+.left{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+}
+.leftsection{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    /* margin: 30px 20px; */
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+.leftsection .buttons{
+    padding: 23px;
+}
+.leftsection .btn{
+    padding: 12px;
+    background-color: red;
+    color: antiquewhite;
+    border:2px solid whitesmoke;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.rightsection img{
+    width: 36%;
+    margin: 46px 56px;
+}
+.purple{
+    color: rgb(226, 43, 43);
+}
+#element{
+    color: rgb(128, 0, 128);
+    font-weight: bold;
+}
+.second{
+    max-width: 50vw;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main hr{
+    border: 0px;
+    background-color: black;
+    height: 3px;
+    width: 700px;
+}
+.second h1{
+    font-size: 1.9rem;
+}
+.textgrey{
+    color:green;
+}
+.second .box{
+    background: white;
+    width: 80vw;
+    margin: 20px 0px;
+    height: 5px;
+    display: flex;
+}
+.second .vertical{
+    height: unset;
+    background-color: aliceblue;
+    width:7px;
+    margin: 9 52vw;
+}
+.image-top{
+    width: 20px;
+    position: relative;
+    top: -12px;
+    left:-16px;
+}
+.vertical-title{
+    position: relative;
+    top:-20px;
+    width: 197px;
+    left:45px;
+    font-weight:bold ;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.vertical-dest{
+    position: relative;
+    color: black;
+    font-size: 10px;
+    width: 107px;
+    top: -15px;
+    left:45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.python{
+    height: 20px;
+}
+.html{
+    height: 23px;
+}
+.react{
+    height: 23px;
+}
+footer{
+    background-color: purple;
+}
+.footer{
+    display: flex;
+    margin: 23px 30px;
+    justify-content: space-evenly;
+}
+.first-footer{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer ul{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer >div{
+    width: 220px;
+}
+footer .footer-right{
+    text-align: center;
+    height: 40px;
+    color: goldenrod;
+    padding: 38px 0px;
+}
+@media screen and (max-width: 200px) {
+    body{
+        background-color: red;
+    }
+}
+.first{
+    flex-direction: row;
+}
+.box{
+    flex-direction: row;
+}
+
+.edu{
+    margin: 2px;
+    color: blue;
+    text-align: center;
+}

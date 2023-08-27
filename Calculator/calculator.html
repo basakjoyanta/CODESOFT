@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <h1 class="center">Welcome My Calculator </h1>
+    <div class="container items-center flex flex-col  mx-auto max-w">
+        <div class="row">
+            <input type="text" class="input">
+        </div>
+        <div class="row">
+            <button class="button">C</button>
+            <button class="button">%</button>
+            <button class="button">AC</button>
+            <button class="button">M+</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">*</button>
+        </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">/</button>
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+        </div>
+        <div class="row">
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button">=</button>
+            <button class="button">-</button>
+        </div>
+    </div>
+</body>
+
+
+
+<script>
+    let string = ""
+    let buttons = document.querySelectorAll('.button');
+    Array.from(buttons).forEach((button) => {
+        button.addEventListener('click', (e) => {
+            if(e.target.innerHTML=='='){
+                string=eval(string);
+                document.querySelector('input').value=string
+            }
+            else if(e.target.innerHTML=='C'){
+                string="";
+                document.querySelector('input').value=string
+            }
+            else if(e.target.innerHTML=='AC'){
+                string="Thank you"
+                document.querySelector('input').value=string
+            }
+            else{
+                console.log(e.target)
+                string = string + e.target.innerHTML
+                document.querySelector('input').value=string
+            }
+        })
+    })
+</script>
+
+</html>
